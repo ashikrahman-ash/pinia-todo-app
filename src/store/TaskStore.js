@@ -1,21 +1,21 @@
 import { defineStore } from 'pinia'
 
-defineStore('task', {
+export const useTask = defineStore('task', {
     state: () => {
         return {
-
+            name: "Ashik Rahman"
 
 
         }
     },
 
-    getters: {
+    // getters: {
 
-    },
+    // },
 
-    actions: {
-        
-    }
+    // actions: {
+
+    // }
 
 
 });
