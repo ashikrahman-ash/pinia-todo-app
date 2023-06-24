@@ -8,12 +8,13 @@
 
 <template>
     <div 
-    
-    v-for="task in store.tasks"
+
+    v-for="task in store.filteredTasks"
     :key="task.id"
 
     class="flex items-center align-middle border-t border-gray-200 py-2"
     >
         <Task :task='task' />
     </div>
+
 </template>
