@@ -2,10 +2,12 @@
   import Header from './components/Header.vue'
   import TodoApp from './components/TodoApp.vue'
 
+
+
 </script>
 
 <template>
-  <div class="max-h-screen bg-gray-200 h-screen flex items-center flex-col justify-center">
+  <div class="bg-gray-200 min-h-screen flex items-center flex-col justify-center py-10">
     <Header />
     <TodoApp />
   </div>
