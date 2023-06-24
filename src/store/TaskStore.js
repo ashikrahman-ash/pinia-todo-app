@@ -9,13 +9,13 @@ export const useTask = defineStore('task', {
         }
     },
 
-    // getters: {
+    getters: {
 
-    // },
+    },
 
-    // actions: {
+    actions: {
 
-    // }
+    }
 
 
 });
