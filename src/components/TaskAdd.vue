@@ -14,6 +14,8 @@ const addTask = () => {
     }
 
     store.addTask(newTask)
+
+    task.value = ''
 }
 
 </script>

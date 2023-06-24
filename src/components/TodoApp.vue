@@ -7,11 +7,15 @@
 </script>
 
 <template>
-    <div class=" max-w-xl w-full bg-white p-6 rounded-lg shadow-xl shadow-gray-200">
+    <div class="max-w-xl w-full min-h-[400px] bg-white p-6 rounded-lg shadow-xl shadow-gray-200 flex flex-col justify-between">
+        <div class="">
+            <TaskAdd />
+            <TaskList />
+        </div>
         
-        <TaskAdd />
-        <TaskList />
-        <TaskFilter />
+        <div class="">
+            <TaskFilter />
+        </div>
         
     </div>
     
