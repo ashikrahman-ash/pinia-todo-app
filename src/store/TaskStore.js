@@ -55,8 +55,15 @@ export const useTasks = defineStore('task', {
         },
 
         deleteTask(id) {
-            this.tasks = this.tasks.filter(task => task.id !== id )
+            this.tasks = this.tasks.filter( task => task.id !== id )
+        },
+
+        handleToggle(id) {
+            const task = this.tasks.find( task => task.id === id )
+
+            task.status = !task.status
         }
+
     }
 
 

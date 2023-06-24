@@ -10,12 +10,16 @@
     const deleteTask = (id) => {
         store.deleteTask(id)
     }
+
+    const handleToggle = (id) => {
+        store.handleToggle(id)
+    }
 </script>
 
 <template>
     
-    <label :for="task.forid" class="flex items-center align-middle gap-3">
-        <input :checked="task.status" type="checkbox" name="" class="h-4 w-4 text-blue-500 rounded-sm border-blue-700" :id="task.forid">
+    <label for="" class="flex items-center align-middle gap-3">
+        <input @change="handleToggle(task.id)" :checked="task.status" type="checkbox" name="" class="h-4 w-4 text-blue-500 rounded-sm border-blue-700" id="">
         <span :class="task.status ? 'line-through' : ''">{{ task.name }}</span>
     </label>
     <button @click="deleteTask(task.id)" class="ml-auto">
